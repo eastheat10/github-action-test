@@ -1,0 +1,26 @@
+###
+POST http://localhost:8082/milestones
+Content-Type: application/json
+
+{
+  "projectId": 1,
+  "name": "milestone name"
+}
+
+###
+GET http://localhost:8082/milestones/project/1
+
+###
+GET http://localhost:8082/milestones/1
+
+###
+PUT http://localhost:8082/milestones
+Content-Type: application/json
+
+{
+  "id": 14,
+  "name": "end"
+}
+
+###
+DELETE http://localhost:8082/milestones/14

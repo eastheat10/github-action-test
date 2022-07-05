@@ -1,0 +1,31 @@
+###
+POST http://localhost:8082/tasks
+Content-Type: application/json
+
+{
+  "projectId": 1,
+  "title": "project title",
+  "content": "project content",
+  "registrantName": "dongyeol"
+}
+
+###
+GET http://localhost:8082/tasks/6
+
+
+###
+GET http://localhost:8082/tasks/project/1
+
+
+###
+PUT http://localhost:8082/tasks
+Content-Type: application/json
+
+{
+  "taskId": 6,
+  "title": "modify title",
+  "content": "modify content"
+}
+
+###
+DELETE http://localhost:8082/tasks/6

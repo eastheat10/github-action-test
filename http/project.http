@@ -1,0 +1,22 @@
+###
+POST http://localhost:8082/projects
+Content-Type: application/json
+
+{
+  "adminId": 1,
+  "adminUsername": "dongyeol",
+  "projectName": "dooray",
+  "content": "create"
+}
+
+###
+GET http://localhost:8082/projects/1
+
+###
+GET http://localhost:8082/projects/members/dongyeol
+
+###
+PUT http://localhost:8082/projects/2/dormant
+
+###
+PUT http://localhost:8082/projects/2/end
