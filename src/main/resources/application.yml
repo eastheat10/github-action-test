@@ -2,8 +2,7 @@ server:
   port: 8082
 
 spring:
-  profiles:
-    include: db
+
 
   jpa:
     database-platform: org.hibernate.dialect.MySQL8Dialect
