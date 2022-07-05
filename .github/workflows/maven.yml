@@ -28,7 +28,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
 
-    - name : Run SonarQube
+    # - name : Run SonarQube
       # run : mvn sonar:sonar -Dsonar.projectKey=${{secrets.PROJECTKEY}} -Dsonar.host.url=${{secrets.URL}} -Dsonar.login=${{secrets.LOGIN}}
 
     - name : Deploy
