@@ -29,7 +29,7 @@ jobs:
       run: mvn -B package --file pom.xml
 
     - name : Run SonarQube
-      run : mvn sonar:sonar -Dsonar.projectKey=${{secrets.PROJECTKEY}} -Dsonar.host.url=${{secrets.URL}} -Dsonar.login=${{secrets.LOGIN}}
+      # run : mvn sonar:sonar -Dsonar.projectKey=${{secrets.PROJECTKEY}} -Dsonar.host.url=${{secrets.URL}} -Dsonar.login=${{secrets.LOGIN}}
 
     - name : Deploy
       uses: appleboy/scp-action@master
